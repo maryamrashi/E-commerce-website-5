@@ -1,0 +1,299 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100vh; /* Full viewport height */
+  }
+  .textContainer {
+    display: flex;
+    left: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 300px; /* You can adjust this */
+    padding: 20px;
+  }
+  .firstheading{
+    position: relative; /* Ensure the left property moves the text correctly */
+    font-weight: 700;
+    font-size: 1rem; 
+    left: 130px; /* Move the text 180px to the right */
+    max-width: 500px; /* Adjust as needed */
+    padding: 20px;
+    text-align: left;
+
+
+  }
+  .textoutline {
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+  }
+  
+  .heading {
+    position: relative; 
+  left: 140px; 
+  font-weight: 700;
+    font-size: 4rem; 
+    line-height: 1.2; 
+    margin: 0; 
+  }
+  .text {
+    position: relative; /* Ensure the left property moves the text correctly */
+    left: 130px; /* Move the text 180px to the right */
+    max-width: 500px; /* Adjust as needed */
+    padding: 20px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .button {
+    margin-top: 20px; /* Adds space between the text and the button */
+    padding: 14px 22px; /* Button padding */
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text */
+    font-size: 1.2rem; /* Font size of the button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+   margin-left: 140px; /* Move the button 180px to the right */
+  }
+  
+  .button:hover {
+    background-color: #0f4163; /* Darker blue when hovering */
+  }
+  .imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-left: auto; /* Push the image to the right */
+    left: 140px; /* Reduced left offset to move the image to the left */
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 290px; /* Adjust to position the circle behind the girl */
+    transform: translateY(-50%);
+    width: 500px; /* Size of the circle */
+    height: 500px;
+    background-color: #ffe1eb; /* Baby pink color */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the circle is behind the image */
+  }
+  .smallCircle {
+    position: absolute;
+    top: 20%;
+    left: 260px; /* Adjust to position the smaller circle to the left of the larger circle */
+    transform: translateY(-50%);
+    width: 80px; /* Size of the smaller circle */
+    height: 80px;
+    background-color: #ffe1eb; /* Same baby pink color */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the small circle is behind the image */
+  }
+  .blueCircle {
+    position: absolute;
+    top: 60%;
+    left: 240px; /* Align it horizontally with the small circle */
+    transform: translateY(60%); /* Move it below the small circle */
+    width: 14px; /* Very small circle size */
+    height: 14px; /* Very small circle size */
+    background-color: #3498db; /* Blue color */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the blue circle is behind the image */
+  }
+  .tinyCircle {
+    position: absolute;
+    top: 50%;
+    left: 800px; /* Position it on the right side of the large circle */
+    transform: translateY(-50%);
+    width: 30px; /* Tiny circle size */
+    height: 30px; /* Tiny circle size */
+    background-color: #ffe1eb; /* Same baby pink color as the large circle */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the tiny circle is behind the image */
+  }
+  .additionalCircle {
+    position: absolute;
+    top: 26%; /* Position just below the tiny circle */
+    left: 820px; /* Keep it aligned with the tiny circle on the right */
+    transform: translateY(50%); /* Move it slightly below the tiny circle */
+    width: 14px; /* Size of the new additional circle */
+    height: 14px; /* Size of the new additional circle */
+    background-color: #3498db; /* Same baby pink color as the other circles */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the circle is behind the image */
+  }
+  
+  
+  .image {
+    position: relative;
+  right:"30px";
+    z-index: 1; /* Image stays in front of the circle */
+  }
+  /* Home.module.css */
+/* .container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 20px;
+} */
+.containerr {
+  display: flex;
+  justify-content: space-between; /* Space out left and right sections */
+  align-items: flex-start; /* Align the items to the top */
+  padding: 20px;
+  margin-top: 80px; 
+}
+
+.leftSide {
+  display: flex;
+  
+  flex-direction: column; /* Stack text vertically */
+  align-items: flex-start; /* Align text to the left */
+  bottom:"30px";
+}
+
+.leftTextAbove {
+  font-size: 18px;
+  margin-left: 80px;
+  text-shadow: rgb(219, 22, 22);
+  color:rgba(226, 14, 14, 0.774);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.leftText {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 80px;
+
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rightText {
+  font-size: 18px;
+  margin-top: 38px;
+  margin-right: 70px;
+font-weight: 500;
+}
+/* Home.module.css */
+.containerrr {
+  display: flex;
+  justify-content: center; /* Center everything horizontally */
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px;
+  margin-top: 40px; /* Space from the top */
+  width: 100%;
+}
+
+.headingsContainerrr {
+  display: flex;
+  justify-content: center; /* Center the headings horizontally */
+  align-items: flex-start; /* Align them at the top */
+  width: 100%; /* Ensure it spans the entire width */
+  gap: 40px; /* Add space between each heading */
+}
+
+.headings {
+  text-align: center; /* Center the text inside the heading container */
+}
+
+.headings h2 {
+  font-size: 68px; /* Increased font size for the headings */
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.heading p {
+  font-size: 16px;
+  margin-top: 8px; /* Space between heading and the text below it */
+}
+/* Home.module.css */
+.containner {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Make sure the container takes full viewport height */
+  padding: 10px;
+  margin-right: 310px;
+}
+
+.imageContainer {
+  display: flex; /* Flex container to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  width: 100%; /* You can adjust the width as needed */
+  height: 90%; /* You can adjust the height as needed */
+}
+
+.image {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+/* style.module.css */
+.coontainer {
+  display: flex;
+  justify-content: center; /* Center the images container horizontally */
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  margin-top: 40px; /* Space from the top */
+  width: 100%;
+}
+
+.imagesCoontainer {
+  display: flex; /* Arrange images next to each other */
+  justify-content: space-between; /* Space between the images */
+  width: 80%; /* You can adjust the width as needed */
+}
+
+.imageItem {
+  text-align: center; /* Center the text under each image */
+  width: 30%; /* Each image container will take 30% of the container's width */
+}
+
+.image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Round corners for the image */
+}
+
+.imageHeading {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.imageDescription {
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.socialLinks {
+  margin-top: 20px;
+  display: flex; /* Use Flexbox to arrange the icons horizontally */
+  justify-content: center; /* Center the icons */
+  gap: 15px; /* Space between icons */
+
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: #07bbf1; /* Set a default color for the icons */
+  
+}
+
+.socialLinks a:hover {
+  color: #053f7c; /* Optional: Change color on hover */
+}
+
+
