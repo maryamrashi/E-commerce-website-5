@@ -1,0 +1,58 @@
+/* style.module.css */
+.coontainer {
+    display: flex;
+    justify-content: center; /* Center the images container horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    margin-top: 40px; /* Space from the top */
+    width: 100%;
+  }
+  
+  .imagesCoontainer {
+    display: flex; /* Arrange images next to each other */
+    justify-content: space-between; /* Space between the images */
+    width: 80%; /* You can adjust the width as needed */
+  }
+  
+  .imageItem {
+    text-align: center; /* Center the text under each image */
+    width: 30%; /* Each image container will take 30% of the container's width */
+  }
+  
+  .image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Round corners for the image */
+  }
+  
+  .imageHeading {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+  
+  .imageDescription {
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  
+  .socialLinks {
+    margin-top: 20px;
+    display: flex; /* Use Flexbox to arrange the icons horizontally */
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+  
+  }
+  
+  .socialLinks a {
+    text-decoration: none;
+    color: #07bbf1; /* Set a default color for the icons */
+    
+  }
+  
+  .socialLinks a:hover {
+    color: #053f7c; /* Optional: Change color on hover */
+  }
+    
+

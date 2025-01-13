@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { LuClock3 } from "react-icons/lu";
 import { GoGraph } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from 'next/link';
+
  // Import Image component from Next.js
 
 const  Home = () => {
@@ -383,9 +385,11 @@ const  Home = () => {
                         {/* Align price and button horizontally */}
         <div className="flex items-center mt-4 space-x-6">
             <p className="text-2xl font-bold text-white" style={{ margin: 0 }}>$16.48</p>
-            <button className="bg-green-500 text-white py-2 px-7 rounded-md hover:bg-green-900 font-bold text-lg whitespace-nowrap">
-                ADD TO CART
-            </button>
+            <Link href="/cart"> {/* Change "/cart" to your target page path */}
+      <button className="bg-green-500 text-white py-2 px-7 rounded-md hover:bg-green-900 font-bold text-lg whitespace-nowrap">
+        ADD TO CART
+      </button>
+    </Link>
         </div>
         
                     </div>

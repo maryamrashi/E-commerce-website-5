@@ -15,7 +15,7 @@ const shop = () => {
             <div className='flex items-center space-x-4 mr-20 mt-16'>
               <a href="/" className='text-gray-800 font-bold hover:text-blue-600 text-1xl '>Home</a>
               < MdArrowForwardIos className='text-gray-400' />
-              <a href="/shop" className='text-gray-400 font-bold hover:text-blue-500 text-1xl ml-10 mr-20'>Shop</a>
+              <a href="/Shop" className='text-gray-400 font-bold hover:text-blue-500 text-1xl ml-10 mr-20'>Shop</a>
             </div>
           </div>
         </div>

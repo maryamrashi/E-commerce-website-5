@@ -1,0 +1,19 @@
+.imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-left: auto; /* Push the image to the right */
+    left: 140px; /* Reduced left offset to move the image to the left */
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 290px; /* Adjust to position the circle behind the girl */
+    transform: translateY(-50%);
+    width: 500px; /* Size of the circle */
+    height: 500px;
+    background-color: #ffe1eb; /* Baby pink color */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the circle is behind the image */
+  }
