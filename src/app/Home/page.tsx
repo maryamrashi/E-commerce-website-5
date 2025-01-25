@@ -28,9 +28,12 @@ const  Home = () => {
       We know how large objects will act,
       <br />but things on a small scale.
     </p>
+    <Link href="/Shop"> {/* Change "/cart" to your target page path */}
     <button className="bg-green-500 text-white py-3 px-8 rounded-md hover:bg-green-800 font-bold text-2xl">
       SHOP NOW
     </button>
+    </Link>
+    
   </div>
 </div>
 
@@ -418,9 +421,12 @@ const  Home = () => {
                         
                         {/* Align price and button horizontally */}
         <div className="flex items-center mt-4 space-x-6">
+        <Link href="/Shop"> {/* Change "/cart" to your target page path */}
         <button className="bg-green-500 text-white py-3 px-8 rounded-md hover:bg-red-700 font-bold text-lg whitespace-nowrap">
                 BUY NOW
             </button>
+    </Link>
+        
             <button className="bg-white text-green-500 border-2 border-green-500 hover:border-green-800  py-3 px-8 rounded-md hover:bg-green-900 font-bold text-lg whitespace-nowrap">
                 READ MORE
             </button>

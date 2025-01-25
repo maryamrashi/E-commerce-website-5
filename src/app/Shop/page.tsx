@@ -1,10 +1,19 @@
+"use client"; // Add this line at the top
 import React from 'react'
 import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoGrid } from "react-icons/io5";
 import { MdFormatListBulleted } from "react-icons/md";
+import { useState } from 'react';
 import Image from 'next/image'; 
+import Link from 'next/link';
 const shop = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <main>
       <div className='bg-white '>
@@ -41,26 +50,64 @@ const shop = () => {
         <h2 className="font-bold text-gray-500 ml-28">Showing all 12 results</h2>
         {/* Views and Icon Section */}
       <div className="ml-5 mt-5">
-      <p className="flex items-center text-gray-500 mb-5 font-bold">
+      <div className="flex items-center text-gray-500 mb-5 font-bold">
           Views: 
-          <button className="ml-8 p-2 border  border-gray-200 rounded-lg hover:bg-gray-300">
+          <button className="ml-8 p-2 border  border-gray-500 rounded-lg hover:bg-gray-300">
             <IoGrid className="text-gray-800" />
           </button>
-          <button className="ml-8 p-2 border border-gray-200 rounded-lg hover:bg-gray-300">
-            <MdFormatListBulleted className="text-gray-800" />
-          </button>
-        </p>
+
+
+
+
+          <div className="relative"> {/* Make the parent container relative */}
+      <button
+        onClick={toggleDropdown}
+        className="ml-8 p-2 border border-gray-500 rounded-lg hover:bg-gray-400"
+      >
+        <MdFormatListBulleted className="text-gray-800" />
+      </button>
+
+      {isOpen && (
+        <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+          <ul>
+            <li>
+              <Link href="/men" className="block px-4 py-2 text-gray-800 font-black hover:bg-slate-500 bg-sky-500">
+                MEN
+              </Link>
+            </li>
+            <li>
+              <Link href="/women" className="block px-4 py-2 text-gray-800 font-black hover:bg-fuchsia-800 bg-fuchsia-500">
+                WOMEN
+              </Link>
+            </li>
+            <li>
+              <Link href="/kids" className="block px-4 py-2 text-gray-800 font-black hover:bg-orange-600 bg-orange-400">
+                KIDS
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
+        
+        
+
+
+
+
+
+        </div>
       </div>
         
         <div className="flex space-x-4 mr-10">
           {/* Popularity Button with Icon */}
-          <button className="flex items-center text-gray-500 font-semibold bg-slate-100 hover:text-blue-500 px-4 py-2 border border-gray-400 rounded-lg">
+          <button className="flex items-center text-black font-semibold bg-slate-100 hover:text-blue-500 px-4 py-2 border border-gray-400 rounded-lg">
             Popularity
             <IoIosArrowDown className="ml-2 font-bold" />
           </button>
              
           {/* FILTER Button */}
-          <button className="text-white font-semibold bg-sky-500 hover:text-blue-500 px-4 py-3   rounded-lg">
+          <button className="text-white font-semibold bg-sky-500 hover:text-black px-4 py-3   rounded-lg">
             FILTER
           </button>
         </div>
