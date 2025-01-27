@@ -29,7 +29,7 @@ const  Home = () => {
       <br />but things on a small scale.
     </p>
     <Link href="/Shop"> {/* Change "/cart" to your target page path */}
-    <button className="bg-green-500 text-white py-3 px-8 rounded-md hover:bg-green-800 font-bold text-2xl">
+    <button className="bg-green-500 text-white py-3 px-8 rounded-md hover:bg-amber-500 font-bold text-2xl">
       SHOP NOW
     </button>
     </Link>
