@@ -1,0 +1,24 @@
+Host github.com-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+Host github.com-second
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_second_account
+  IdentitiesOnly yes
+
+Host github.com-third
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_third_account
+  IdentitiesOnly yes
+
+Host github.com-fourth
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_fourth_account
+  IdentitiesOnly yes
+
