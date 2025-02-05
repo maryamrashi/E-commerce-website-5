@@ -5,7 +5,6 @@ import { IoSearch } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import React from 'react';
 import Link from 'next/link';
-import { BiColor } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
   return (

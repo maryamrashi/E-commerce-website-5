@@ -1,6 +1,8 @@
 
 import React from 'react';
-import { FaInstagram, FaYoutube, FaFacebook, FaTwitter } from 'react-icons/fa'; // Import the social media icons
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'; // Import the social media icons
+import Link from 'next/link';
+
 
 const Gtext = () => {
   return (
@@ -12,15 +14,15 @@ const Gtext = () => {
 
       {/* Social Media Icons on the right side */}
       <div className="flex space-x-4 mr-28">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook className=" text-blue-500 text-2xl cursor-pointer hover:text-blue-900" />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        </Link>
+        <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <FaInstagram className=" text-blue-500 text-2xl cursor-pointer hover:text-pink-700" />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        </Link>
+        <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter className=" text-blue-500 text-2xl cursor-pointer hover:text-blue-900" />
-        </a>
+        </Link>
         
       </div>
     </main>

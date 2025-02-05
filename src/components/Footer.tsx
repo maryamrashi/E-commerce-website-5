@@ -1,5 +1,8 @@
 import React from "react";
 
+import Link from 'next/link';
+
+
 const Footer = () => {
   return (
     <footer
@@ -24,24 +27,24 @@ const Footer = () => {
   </h3> {/* Ensure heading is black */}
   <ul style={{ listStyleType: "none", padding: 0 }}>
     <li>
-      <a href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
         A
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
         C
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
         W 
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "white", textDecoration: "none", marginBottom: "8px" }}>
         B
-      </a>
+      </Link>
     </li>
   </ul>
 </div>
@@ -53,24 +56,24 @@ const Footer = () => {
   </h3> {/* Ensure heading is black */}
   <ul style={{ listStyleType: "none", padding: 0 }}>
     <li>
-      <a href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
         About Us
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
         Careers
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
         We are hiring
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
+      <Link href="#" style={{ color: "black", textDecoration: "none", marginBottom: "8px" }}>
         Blog
-      </a>
+      </Link>
     </li>
   </ul>
 </div>
@@ -81,24 +84,24 @@ const Footer = () => {
           <h3 style={{ color: "black" , fontSize:"16px", fontWeight:"bold" , marginBottom:"10px"}}>Legal</h3> {/* Ensure heading is black */}
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Carrier
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 We are hiring
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -108,24 +111,24 @@ const Footer = () => {
           <h3 style={{ color: "black" , fontSize:"16px", fontWeight:"bold", marginBottom:"10px" }}>Features</h3> {/* Ensure heading is black */}
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
             Business Marketing 
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 User Analytic
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Live Chat
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Unlimited Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -135,24 +138,24 @@ const Footer = () => {
           <h3 style={{ color: "black" , fontSize:"16px", fontWeight:"bold", marginBottom:"10px" }}>Resources</h3> {/* Ensure heading is black */}
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 IOS & Android
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Watch a Demo
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 Customers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link href="#" style={{ color: "black", textDecoration: "none" }}>
                 API
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

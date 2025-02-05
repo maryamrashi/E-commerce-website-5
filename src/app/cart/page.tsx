@@ -1,6 +1,5 @@
 // CartPage.js
 import { BsCartPlus, BsCurrencyDollar } from 'react-icons/bs';
-import { GoCheckCircleFill } from "react-icons/go";
 import { HiBadgeCheck } from "react-icons/hi";
 export default function CartPage() {
   const productPrice = 29.99; // Example product price

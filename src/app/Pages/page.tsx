@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import React from 'react'
 import Link from 'next/link'; 
 import { MdArrowForwardIos } from "react-icons/md"; 
@@ -32,38 +32,48 @@ const Pages = () => {
 
 <div className="flex space-x-1 h-screen mt-14">
       {/* First container (larger width) */}
-      <div className="flex-1 bg-white p-4">
-        <img
+      <div className="flex-1 bg-white p-4  ">
+        <Image
           src="/pagespic1.jpg"
           alt="Image 1"
+          width={1200}  
+                height={800}
           className="w-full h-full object-cover"
         />
       </div>
 
       {/* Second container (two images stacked vertically) */}
       <div className="flex flex-col bg-white p-4 w-1/4">
-        <img
+        <Image
           src="/pagespic2.jpg"
           alt="Image 2"
+          width={1200}  
+                height={800}
           className="w-full h-1/2 object-cover mb-4"
         />
-        <img
+        <Image
           src="/pagespic4.jpg"
           alt="Image 3"
+          width={1200}  
+                height={800}
           className="w-full h-1/2 object-cover"
         />
       </div>
 
       {/* Third container (same as second container) */}
       <div className="flex flex-col bg-white p-4 w-1/4 ">
-        <img
+        <Image
           src="/pagespic3.jpg"
           alt="Image 4"
+          width={1200}  
+                height={800}
           className="w-full h-1/2 object-cover mb-4"
         />
-        <img
+        <Image
           src="/pagespic5.jpg"
           alt="Image 5"
+          width={1200}  
+                height={800}
           className="w-full h-1/2 object-cover"
         />
       </div>
@@ -85,64 +95,71 @@ const Pages = () => {
       {/* Three Images Container */}
       <div className={styles.imagesCoontainer}>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic6.jpg"  // Replace with the path to your image
             alt="Image 1"
+            width={1200}  
+                height={800}
+            
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic7.jpg"  // Replace with the path to your image
             alt="Image 2"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic8.jpg"  // Replace with the path to your image
             alt="Image 3"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -151,64 +168,70 @@ const Pages = () => {
       {/* Three Images Container */}
       <div className={styles.imagesCoontainer}>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic11.jpg"  // Replace with the path to your image
             alt="Image 1"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic9.jpg"  // Replace with the path to your image
             alt="Image 2"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic10.jpg"  // Replace with the path to your image
             alt="Image 3"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -217,64 +240,70 @@ const Pages = () => {
       {/* Three Images Container */}
       <div className={styles.imagesCoontainer}>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic12.jpg"  // Replace with the path to your image
             alt="Image 1"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic13.jpg"  // Replace with the path to your image
             alt="Image 2"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/pagespic14.jpg"  // Replace with the path to your image
             alt="Image 3"
+            width={1200}  
+                height={800}
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -302,38 +331,38 @@ const Pages = () => {
       </div>
     </div>
     <div className=" space-x-6 flex items-center justify-center mb-20">
-      <a
+      <Link
         href="https://www.facebook.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-600 hover:text-blue-800 mb-auto"
       >
         <FaFacebook size={30} />
-      </a>
-      <a
+      </Link>
+      <Link
         href="https://www.instagram.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-pink-500 hover:text-pink-700 mb-auto"
       >
         <FaInstagram size={30} />
-      </a>
-      <a
+      </Link>
+      <Link
         href="https://www.twitter.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-400 hover:text-blue-600 mb-auto"
       >
         <FaTwitter size={30} />
-      </a>
-      <a
+      </Link>
+      <Link
         href="https://www.linkedin.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-700 hover:text-blue-900 mb-auto"
       >
         <FaLinkedin size={30} />
-      </a>
+      </Link>
     </div>
     </main>
   )

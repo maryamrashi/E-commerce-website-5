@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Atext = () => {
     return (
         <div className="text-center mt-8">
-            <h2 className="text-2xl font-bold text-gray-900 mt-12">EDITOR'S PICK</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-12">EDITORS PICK</h2>
             <p className="text-1xl text-gray-600 mt-4 font-bold">Problems trying to resolve the conflict between</p>
 
             {/* Flex container to hold all images */}

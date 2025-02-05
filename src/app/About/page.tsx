@@ -7,6 +7,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import React from 'react';
 import Image from 'next/image';
 import styles from './style.module.css'; // Import the CSS module
+import Link from 'next/link';
+
 const About = () => {
   return (
     <main>
@@ -85,11 +87,14 @@ const About = () => {
     <div className={styles.containner}>
       {/* Centered Image Container */}
       <div className={styles.imageContainer}>
-        <img
-          className={styles.image}
-          src="/Video card.png"  // Replace with the path to your image
-          alt="Centered Image"
-        />
+      <Image
+  className={styles.image}
+  src="/Video card.png"  // Replace with the correct path to your image
+  alt="Centered Image"
+  width={100}  // Specify the width of the image
+  height={800} // Specify the height of the image
+/>
+
       </div>
     </div>
   
@@ -111,64 +116,70 @@ const About = () => {
       {/* Three Images Container */}
       <div className={styles.imagesCoontainer}>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/newgpic1.jpg"  // Replace with the path to your image
             alt="Image 1"
+            width={100}  // Specify the width of the image
+  height={800} // Specify the height of the image
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/newgpic2.jpg"  // Replace with the path to your image
             alt="Image 2"
+            width={100}  // Specify the width of the image
+  height={800} // Specify the height of the image
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       
         <div className={styles.imageItem}>
-          <img
+          <Image
             className={styles.image}
             src="/newbpic.jpg"  // Replace with the path to your image
             alt="Image 3"
+            width={100}  // Specify the width of the image
+  height={800} // Specify the height of the image
           />
           <h3 className={styles.imageHeading}>Username</h3>
           <p className={styles.imageDescription}>Profession</p>
           <div className={styles.socialLinks}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -186,23 +197,64 @@ const About = () => {
     </div>
     
 
-    {/* Add images below this content */}
-    <div className='mt-24 ml-32 mr-10 px-5 bg-white'>
-        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 ml-24 mr-24'>
-          {/* Image 2 */}
-          <img src="fa-brands-1.png" alt="Image 2" className='w-153 h-34 object-cover ' />
-          {/* Image 3 */}
-          <img src="fa-brands-2.png" alt="Image 3" className='w-83 h-59 object-cover ' />
-          {/* Image 4 */}
-          <img src="fa-brands-3.png" alt="Image 4" className='w-102 h-75 object-cover ' />
-          {/* Image 5 */}
-          <img src="fa-brands-4.png" alt="Image 5" className='w-151 h-42 object-cover' />
-          {/* Image 6 */}
-          <img src="fa-brands-5.png" alt="Image 5" className='w-103.68 h-61.75 object-cover' />
-          {/* Image 1 */}
-          <img src="/Vector.png" alt="Image 1" className='w-75.75 h-71.86 object-cover' />
-        </div>
-      </div>
+    <div className='mt-24 ml-32 mr-10  px-5 bg-white'>
+    <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-16 ml-26 mr-24'>
+    {/* Image 2 */}
+    <Image 
+      src="/fa-brands-1.png" 
+      alt="Image 2" 
+      width={153}  // Specify width for aspect ratio
+      height={34}  // Specify height for aspect ratio
+      layout="responsive"  // Makes the image take 100% width and adjusts the height automatically
+      className='object-cover mr-6' 
+    />
+    {/* Image 3 */}
+    <Image 
+      src="/fa-brands-2.png" 
+      alt="Image 3" 
+      width={83}  
+      height={59} 
+      layout="responsive" 
+      className='object-cover' 
+    />
+    {/* Image 4 */}
+    <Image 
+      src="/fa-brands-3.png" 
+      alt="Image 4" 
+      width={102}  
+      height={75} 
+      layout="responsive" 
+      className='object-cover' 
+    />
+    {/* Image 5 */}
+    <Image 
+      src="/fa-brands-4.png" 
+      alt="Image 5" 
+      width={151}  
+      height={42} 
+      layout="responsive" 
+      className='object-cover' 
+    />
+    {/* Image 6 */}
+    <Image 
+      src="/fa-brands-5.png" 
+      alt="Image 5" 
+      width={103.68}  
+      height={61.75} 
+      layout="responsive" 
+      className='object-cover' 
+    />
+    {/* Image 1 */}
+    <Image 
+      src="/Vector.png" 
+      alt="Image 1" 
+      width={75.75}  
+      height={71.86} 
+      layout="responsive" 
+      className='object-cover' 
+    />
+  </div>
+</div>
 
 
       <div className="flex h-screen mt-32">
@@ -222,9 +274,11 @@ const About = () => {
 
       {/* Right Container with Image */}
       <div className="w-1/2">
-        <img
+        <Image
           src="/pinkg.jpg" // Replace with the path to your image
           alt="Picture"
+          width={1200}  // Specify the width of the image
+  height={800} // Specify the height of the image
           className="w-full h-full object-cover"
         />
       </div>

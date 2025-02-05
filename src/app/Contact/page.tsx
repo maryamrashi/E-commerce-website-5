@@ -2,10 +2,8 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link'; 
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import styles from './style.module.css'; 
 import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'; // Use FaMapMarkerAlt
 import { TfiEmail } from 'react-icons/tfi';
-import { MdArrowDownward } from 'react-icons/md'
 import { PiArrowBendRightDownLight } from "react-icons/pi";
 const Contact = () => {
   return (

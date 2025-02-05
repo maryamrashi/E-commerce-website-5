@@ -1,6 +1,3 @@
-
-
-
 import Image from 'next/image';  // Import Image component from Next.js
 
 const Picture = () => {
