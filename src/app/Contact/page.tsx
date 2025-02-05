@@ -144,8 +144,8 @@ const Contact = () => {
       </div>
 
       {/* Heading */}
-      <h1 className="text-1xl mb-7 font-bold text-gray-700">WE Can't WAIT TO MEET YOU</h1>
-      <h1 className="text-6xl font-bold text-gray-800">Let's Talk</h1>
+      <h1 className="text-1xl mb-7 font-bold text-gray-700">WE Can&apos;t WAIT TO MEET YOU</h1>
+      <h1 className="text-6xl font-bold text-gray-800">Let&apos;s Talk</h1>
     </div>
     <div className="flex items-center justify-center mb-8">
       <div className="p-1 bg-gray-200 rounded-lg shadow-lg mb-auto mt-8">

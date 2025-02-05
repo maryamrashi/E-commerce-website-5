@@ -38,7 +38,7 @@ const  Home = () => {
 </div>
 
                   <div className="text-center mt-8">
-                              <h2 className="text-2xl font-bold text-gray-900 mt-12">EDITOR'S PICK</h2>
+                              <h2 className="text-2xl font-bold text-gray-900 mt-12">EDITORS PICK</h2>
                               <p className="text-1xl text-gray-600 mt-4 font-bold">Problems trying to resolve the conflict between</p>
                   
                               {/* Flex container to hold all images */}
@@ -482,9 +482,9 @@ const  Home = () => {
                              <p className="mt-6 text-1xl text-gray-500">Trending</p>             <p className="mt-6 text-1xl text-gray-500">New</p>
                         </div>
                         <p className="mt-5 flex justify-start text-gray-800">Loudest a la Madison #1</p>
-                          <p className="mt-1 flex justify-start text-gray-800">(L'integral)</p>
+                          <p className="mt-1 flex justify-start text-gray-800">(L integral)</p>
                            <p className="mt-3 flex justify-start text-gray-500">We focus on ergonomics and meeting</p>
-                           <p className="mt-1 flex justify-start text-gray-500">you where you work. it's only a</p>
+                           <p className="mt-1 flex justify-start text-gray-500">you where you work. it is only a</p>
                           <p className="mt-1 flex justify-start text-gray-500">keystroke away.</p>
                             <div className="flex justify-between items-center mt-4">
                               <div className="flex items-center">
@@ -525,9 +525,9 @@ const  Home = () => {
                              <p className="mt-6 text-1xl text-gray-500">New</p>
                           </div>
                           <p className="mt-5 flex justify-start text-gray-800">Loudest a la Madison #1</p>
-                           <p className="mt-1 flex justify-start text-gray-800">(L'integral)</p>
+                           <p className="mt-1 flex justify-start text-gray-800">(L integral)</p>
                           <p className="mt-3 flex justify-start text-gray-500">We focus on ergonomics and meeting</p>
-                           <p className="mt-1 flex justify-start text-gray-500">you where you work. it's only a</p>
+                           <p className="mt-1 flex justify-start text-gray-500">you where you work. it is only a</p>
                          <p className="mt-1 flex justify-start text-gray-500">keystroke away.</p>
                             <div className="flex justify-between items-center mt-4">
                               <div className="flex items-center">
@@ -568,9 +568,9 @@ const  Home = () => {
                             <p className="mt-6 text-1xl text-gray-500">New</p>
                           </div>
                           <p className="mt-5 flex justify-start text-gray-800">Loudest a la Madison #1</p>
-                          <p className="mt-1 flex justify-start text-gray-800">(L'integral)</p>
+                          <p className="mt-1 flex justify-start text-gray-800">(L integral)</p>
                           <p className="mt-3 flex justify-start text-gray-500">We focus on ergonomics and meeting</p>
-                          <p className="mt-1 flex justify-start text-gray-500">you where you work. it's only a</p>
+                          <p className="mt-1 flex justify-start text-gray-500">you where you work. it is only a</p>
                            <p className="mt-1 flex justify-start text-gray-500">keystroke away.</p>
                             <div className="flex justify-between items-center mt-4">
                               <div className="flex items-center">

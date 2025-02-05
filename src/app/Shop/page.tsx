@@ -7,7 +7,7 @@ import { MdFormatListBulleted } from "react-icons/md";
 import { useState } from 'react';
 import Image from 'next/image'; 
 import Link from 'next/link';
-const shop = () => {
+const Shop = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle dropdown visibility
@@ -623,4 +623,4 @@ const shop = () => {
   )
 }
 
-export default shop
+export default Shop

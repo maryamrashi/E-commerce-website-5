@@ -262,7 +262,7 @@ const About = () => {
       <div className="w-1/2 bg-blue-500 p-8 flex flex-col justify-center">
         {/* Heading and Text Section */}
         <p className="text-1xl text-white font-bold">WORK WITH US</p>
-        <h1 className="text-4xl font-bold text-white my-4">Now Let's grow Yours</h1>
+        <h1 className="text-4xl font-bold text-white my-4">Now Let&apos;s grow Yours</h1>
         <p className="font-semibold text-white mb-6">
           The gradual accomulation of information about atomic and<br/>small-scale behaviour during the first quarter of the 20th
         </p>
